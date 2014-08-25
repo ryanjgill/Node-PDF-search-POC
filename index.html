@@ -1,0 +1,29 @@
+<html>
+<head>
+	<title>Pdf Search</title>
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="core.css">
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css">
+</head>
+<body>
+	<h3>Search PDFs</h3>
+	<input placeholder="Search term here" class="input-large">
+	<button class="btn btn-success">Go</button>
+<span id="loadingAnimation" class="blink hide">
+  <h1 class="loadingText">SEARCHING</h1>
+</span>
+	<div class="results">
+
+		<div class="pdfCounts hide animated fadeIn">
+			Of the <span class="total"></span> total PDFs, we found <span class="matches"></span> match<span class="plural">es</span>!			
+		</div>
+		<ul>
+			<li class="noResults animated fadeInRightBig hide">No matches found</li>
+		</ul>
+	</div>
+
+</body>
+<script src="01.jquery.js"></script>
+<script src="searchPdf.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore-min.js"></script>
+</html>
